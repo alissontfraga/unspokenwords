@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import { api } from "../services/api";
 import { Link } from "react-router-dom";
 import "../styles/messages.css";
-import Footer from "../components/Footer.jsx";
 
 export default function Messages() {
   const [messages, setMessages] = useState([]);
@@ -40,7 +39,6 @@ export default function Messages() {
 
 
   return (
-    <>
      <div className="messages-page">
 
       <Link className="new-message-btn" to="/messages/new">
@@ -90,8 +88,5 @@ export default function Messages() {
 
        </div>
      </div> 
-
-     <Footer /> 
-    </> 
   );
 }

@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { api } from "../services/api";
 import { useNavigate } from "react-router-dom";
 import "../styles/newmessage.css";
-import Footer from "../components/Footer";
 
 export default function NewMessage() {
 
@@ -36,7 +35,6 @@ export default function NewMessage() {
   }
 
   return (
-    <>
      <div className="new-message-container">
       <form className="new-message-form" onSubmit={submit}>
 
@@ -84,7 +82,5 @@ export default function NewMessage() {
         <button className="send-button" type="submit">Save Message</button>
       </form>
     </div>
-    <Footer />
-    </>
   );
 }

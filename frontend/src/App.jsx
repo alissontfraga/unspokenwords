@@ -7,7 +7,6 @@ import Messages from "./pages/Messages";
 import NewMessage from "./pages/NewMessage";
 import ProtectedRoute from "./components/ProtectedRoute";
 import { Toaster } from "react-hot-toast";
-import Footer from  "./components/Footer";
 
 export default function App() {
   return (
