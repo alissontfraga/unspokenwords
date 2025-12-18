@@ -73,6 +73,7 @@
   cursor: pointer;
   transition: 0.25s ease;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.35);
+  text-shadow: 0px 1px rgba(0, 0, 0, 0.329);
 }
 
 .send-button:hover {
@@ -144,6 +145,7 @@ textarea:focus {
   font-size: 15px;
   user-select: none;
   box-shadow: 0 0 0 rgba(168, 85, 247, 0);
+  text-shadow: 0px 1px rgba(0, 0, 0, 0.329);
 }
 
 .cat-option span:hover {
