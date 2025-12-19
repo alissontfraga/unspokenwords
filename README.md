@@ -58,5 +58,3 @@ A web application where users can write and store words they never said.
 
 - Alisson Teles Fraga [@alissontfraga](https://github.com/alissontfraga)
 
-### CS50x
-This project was created as the final requirement to complete the Harvard CS50x course.
