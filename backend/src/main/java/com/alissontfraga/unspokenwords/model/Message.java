@@ -14,6 +14,7 @@ import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
+import jakarta.validation.constraints.NotBlank;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -31,11 +32,18 @@ public class Message {
     @GeneratedValue(strategy = GenerationType.UUID)
     private String id;
 
-    @Column(columnDefinition = "text")
+    @Column(columnDefinition = "text", nullable = false)
+    @NotBlank
     private String content;
 
+    @Column(nullable = false)
+    @NotBlank
     private String category;
+
+    @Column(nullable = false)
+    @NotBlank
     private String forPerson;
+
     private LocalDate date;
 
     @ManyToOne(fetch = FetchType.LAZY)
